@@ -77,7 +77,7 @@ ALTER TABLE public.categories ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "categories public read" ON public.categories
   FOR SELECT TO anon, authenticated USING (true);
 CREATE POLICY "categories editors write" ON public.categories
-  FOR ALL TO authenticated USING (true) WITH CHECK (true);
+  FOR ALL TO service_role USING (true) WITH CHECK (true);
 
 CREATE TRIGGER categories_touch_updated_at
   BEFORE UPDATE ON public.categories
@@ -145,13 +145,13 @@ CREATE POLICY "translations public read published" ON public.article_translation
     EXISTS (SELECT 1 FROM public.articles a WHERE a.id = article_id AND a.status = 'published')
   );
 CREATE POLICY "translations editors read" ON public.article_translations
-  FOR SELECT TO authenticated USING (true);
+  FOR SELECT TO service_role USING (true);
 CREATE POLICY "translations editors insert" ON public.article_translations
-  FOR INSERT TO authenticated WITH CHECK (true);
+  FOR INSERT TO service_role WITH CHECK (true);
 CREATE POLICY "translations editors update" ON public.article_translations
-  FOR UPDATE TO authenticated USING (true) WITH CHECK (true);
+  FOR UPDATE TO service_role USING (true) WITH CHECK (true);
 CREATE POLICY "translations editors delete" ON public.article_translations
-  FOR DELETE TO authenticated USING (true);
+  FOR DELETE TO service_role USING (true);
 
 CREATE TRIGGER article_translations_touch_updated_at
   BEFORE UPDATE ON public.article_translations
