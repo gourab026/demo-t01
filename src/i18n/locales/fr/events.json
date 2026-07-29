@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Événements — The Switzerland Chapter of ICF",
+    "description": "Conférences, webinars et rencontres communautaires pour coachs et organisations dans toute la Suisse."
+  },
+  "hero": {
+    "eyebrow": "Événements",
+    "titlePrefix": "Connectez-vous, apprenez et ",
+    "titleAccent": "développez-vous",
+    "titleSuffix": " ensemble.",
+    "lede": "Conférences, webinars et rencontres communautaires pour coachs et organisations dans toute la Suisse."
+  },
+  "featured": {
+    "eyebrow": "Événement à la une"
+  },
+  "upcoming": {
+    "eyebrow": "À venir",
+    "title": "Nos prochains événements.",
+    "empty": "Aucun événement n'est programmé pour l'instant. Revenez bientôt."
+  },
+  "past": {
+    "eyebrow": "Événements passés",
+    "recap": "Résumé →"
+  },
+  "cta": {
+    "eyebrow": "Contribuer",
+    "title": "Vous avez un événement à proposer ?",
+    "propose": "Proposer un événement"
+  },
+  "tag": {
+    "inPerson": "En présentiel",
+    "online": "En ligne",
+    "hybrid": "Hybride",
+    "registration": "Inscription",
+    "full": "Complet"
+  },
+  "detail": {
+    "backToEvents": "Tous les événements",
+    "rsvpEyebrow": "Inscription",
+    "rsvp": "S'inscrire",
+    "saving": "Enregistrement…",
+    "fieldName": "Nom complet",
+    "fieldEmail": "E-mail",
+    "fieldNotes": "Quelque chose à nous signaler ? (facultatif)",
+    "confirmed": "Votre inscription est enregistrée.",
+    "youAreIn": "Vous êtes inscrit·e à cet événement.",
+    "cancel": "Annuler mon inscription",
+    "full": "Cet événement est complet.",
+    "closed": "Les inscriptions ne sont pas ouvertes.",
+    "noRegistration": "Aucune inscription nécessaire — venez simplement.",
+    "pastEvent": "Cet événement a déjà eu lieu.",
+    "membersOnly": "L'inscription est réservée aux membres connectés.",
+    "signIn": "Se connecter",
+    "seatsLeft": "{n} places restantes",
+    "joinLink": "Rejoindre la session en ligne",
+    "privacy": "Vos données servent uniquement à organiser cet événement.",
+    "error": {
+      "full": "Cet événement vient d'afficher complet.",
+      "closed": "Les inscriptions sont closes.",
+      "duplicate": "Cette adresse e-mail est déjà inscrite.",
+      "error": "Une erreur est survenue. Merci de réessayer."
+    },
+    "notFoundTitle": "Événement introuvable",
+    "notFoundBody": "Cet événement a peut-être été retiré ou le lien est incorrect.",
+    "errorTitle": "Impossible de charger cet événement",
+    "errorBody": "Merci de réessayer dans un instant."
+  }
+}

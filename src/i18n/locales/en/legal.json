@@ -1,0 +1,35 @@
+{
+  "imprint": {
+    "meta": {
+      "title": "Imprint — The Switzerland Chapter of ICF",
+      "description": "Legal notice and provider information for the website of The Switzerland Chapter of ICF."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Imprint",
+      "lede": "Legal notice, provider information, and liability statements for the website of The Switzerland Chapter of ICF."
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy — The Switzerland Chapter of ICF",
+      "description": "How The Switzerland Chapter of ICF processes and protects personal data on this website."
+    },
+    "hero": {
+      "eyebrow": "Privacy",
+      "title": "Privacy Policy",
+      "lede": "Information about the processing of personal data on the website of The Switzerland Chapter of ICF and your data protection rights."
+    }
+  },
+  "draftBanner": {
+    "title": "Draft pending legal review",
+    "body": "This page is a draft for internal legal review and is not yet approved for publication. The content may change before the final version is published."
+  },
+  "nav": {
+    "imprint": "Imprint",
+    "privacy": "Privacy"
+  },
+  "common": {
+    "lastUpdated": "Last updated: [Date of publication]"
+  }
+}

@@ -1,0 +1,175 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  Outlet,
+  Link,
+  createRootRouteWithContext,
+  useRouter,
+  HeadContent,
+  Scripts,
+} from "@tanstack/react-router";
+import { useEffect, type ReactNode } from "react";
+
+import appCss from "../styles.css?url";
+import { useLocale } from "../i18n";
+import { LOCALE_HTML_LANG } from "../i18n/config";
+import { reportLovableError } from "../lib/lovable-error-reporting";
+import { LanguageNotice } from "../components/language-notice";
+
+function NotFoundComponent() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <div className="max-w-md text-center">
+        <h1 className="text-7xl font-bold text-foreground">404</h1>
+        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        <div className="mt-6">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Go home
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+  console.error(error);
+  const router = useRouter();
+  useEffect(() => {
+    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+  }, [error]);
+
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <div className="max-w-md text-center">
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+          This page didn't load
+        </h1>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Something went wrong on our end. You can try refreshing or head back home.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
+          <button
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Try again
+          </button>
+          <a
+            href="/"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+          >
+            Go home
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  head: () => ({
+    meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "The Swiss Chapter of ICF - The Global Coaching Association" },
+      {
+        name: "description",
+        content:
+          "The Switzerland Chapter of ICF is the Swiss chapter of the International Coaching Federation. Find a credentialed coach, develop leaders, and join a coaching community across Zürich, Romandie and Ticino.",
+      },
+      { name: "author", content: "The Switzerland Chapter of ICF" },
+      {
+        property: "og:title",
+        content: "The Swiss Chapter of ICF - The Global Coaching Association",
+      },
+      {
+        property: "og:description",
+        content:
+          "The Switzerland Chapter of ICF is the Swiss chapter of the International Coaching Federation. Find a credentialed coach, develop leaders, and join a coaching community across Zürich, Romandie and Ticino.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "The Swiss Chapter of ICF - The Global Coaching Association",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "The Switzerland Chapter of ICF is the Swiss chapter of the International Coaching Federation. Find a credentialed coach, develop leaders, and join a coaching community across Zürich, Romandie and Ticino.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9742a08a-f4da-45ed-a019-f4fbc25ec48e/id-preview-c16d0cde--9b53a55c-a944-4840-b29d-ad56f7d750f4.lovable.app-1784791324912.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9742a08a-f4da-45ed-a019-f4fbc25ec48e/id-preview-c16d0cde--9b53a55c-a944-4840-b29d-ad56f7d750f4.lovable.app-1784791324912.png",
+      },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: appCss,
+      },
+      // Fonts are self-hosted (see @font-face in src/styles.css); preload them
+      // so first paint doesn't flash the fallback stack.
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff2",
+        href: "/fonts/plus-jakarta-sans-variable.woff2",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "preload",
+        as: "font",
+        type: "font/woff2",
+        href: "/fonts/quicksand-variable.woff2",
+        crossOrigin: "anonymous",
+      },
+    ],
+  }),
+  shellComponent: RootShell,
+  component: RootComponent,
+  notFoundComponent: NotFoundComponent,
+  errorComponent: ErrorComponent,
+});
+
+function RootShell({ children }: { children: ReactNode }) {
+  const locale = useLocale();
+  return (
+    <html lang={LOCALE_HTML_LANG[locale]}>
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        {children}
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+function RootComponent() {
+  const { queryClient } = Route.useRouteContext();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Outlet />
+      <LanguageNotice />
+    </QueryClientProvider>
+  );
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Find a Coach — The Switzerland Chapter of ICF",
+    "description": "Search the directory of ICF-credentialed coaches across Switzerland by region, language, credential level and specialisation."
+  },
+  "hero": {
+    "eyebrow": "Directory",
+    "titlePre": "Find a ",
+    "titleAccent": "credentialed",
+    "titlePost": " coach.",
+    "lede": "Every coach listed holds an active ICF credential and commits to the ICF Code of Ethics."
+  },
+  "filters": {
+    "title": "Filter",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Name, city or specialisation",
+    "regionLabel": "Region",
+    "regionAll": "All regions",
+    "languageLabel": "Language",
+    "languageAll": "All languages",
+    "credentialLabel": "Credential",
+    "specializationLabel": "Specialisation",
+    "formatLabel": "Format",
+    "acceptingLabel": "Accepting new clients",
+    "clear": "Clear filters",
+    "toggle": "Filters"
+  },
+  "modes": {
+    "aria": "Finder mode"
+  },
+  "results": {
+    "one": "1 coach",
+    "many": "{count} coaches",
+    "oneMode": "1 result in {mode}",
+    "manyMode": "{count} results in {mode}",
+    "emptyTitle": "No coaches match your filters",
+    "emptyBody": "Try widening your canton or specialisation.",
+    "emptyModeBody": "No results in {mode} match your filters yet — try widening your canton or specialisation.",
+    "loading": "Loading coaches…",
+    "errorTitle": "The directory is temporarily unavailable",
+    "errorBody": "Please try again in a moment.",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "card": {
+    "featured": "Featured",
+    "accepting": "Accepting new clients",
+    "waitlist": "Waitlist only",
+    "credentialSince": "Credentialed since {year}",
+    "viewProfile": "View profile"
+  },
+  "formats": {
+    "in-person": "In person",
+    "online": "Online"
+  },
+  "languages": {
+    "de": "German",
+    "fr": "French",
+    "it": "Italian",
+    "en": "English"
+  },
+  "specializations": {
+    "leadership": "Leadership",
+    "career": "Career",
+    "team": "Team coaching",
+    "executive": "Executive",
+    "transition": "Transition",
+    "wellbeing": "Wellbeing",
+    "systemic": "Systemic",
+    "diversity": "Diversity & inclusion"
+  },
+  "note": {
+    "title": "Profiles sourced from ICF Global",
+    "body": "Coach records are maintained by ICF Global. Members can extend their profile with additional content on this portal."
+  },
+  "detail": {
+    "back": "Back to search",
+    "about": "About",
+    "specialisations": "Specialisation",
+    "formats": "Format",
+    "languages": "Languages",
+    "regions": "Service areas",
+    "links": "Links",
+    "notFoundTitle": "This coach profile is unavailable",
+    "notFoundBody": "The profile may have been unpublished. Browse the directory to find another credentialed coach.",
+    "metaFallback": "{name} is an ICF-credentialed coach listed in the The Switzerland Chapter of ICF directory.",
+    "approach": "How I work",
+    "clientTypes": "Who I work with",
+    "qualifications": "Credentials & training",
+    "fees": "Fees",
+    "session": "Session length",
+    "experience": "Experience",
+    "availability": "Availability",
+    "book": "Book a session",
+    "message": "Send a message",
+    "workWith": "Working with {name}",
+    "languageFallback": "Shown in {language} — this coach has not published a version in your language yet."
+  }
+}

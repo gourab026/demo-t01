@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Trouver un coach — The Switzerland Chapter of ICF",
+    "description": "Recherchez dans l'annuaire des coachs certifiés ICF en Suisse par région, langue, niveau de certification et spécialisation."
+  },
+  "hero": {
+    "eyebrow": "Annuaire",
+    "titlePre": "Trouvez un coach ",
+    "titleAccent": "certifié",
+    "titlePost": ".",
+    "lede": "Chaque coach référencé détient une certification ICF active et s'engage à respecter le Code de déontologie de l'ICF."
+  },
+  "filters": {
+    "title": "Filtres",
+    "searchLabel": "Rechercher",
+    "searchPlaceholder": "Nom, ville ou spécialisation",
+    "regionLabel": "Région",
+    "regionAll": "Toutes les régions",
+    "languageLabel": "Langue",
+    "languageAll": "Toutes les langues",
+    "credentialLabel": "Certification",
+    "specializationLabel": "Spécialisation",
+    "formatLabel": "Format",
+    "acceptingLabel": "Accepte de nouveaux clients",
+    "clear": "Réinitialiser les filtres",
+    "toggle": "Filtres"
+  },
+  "modes": {
+    "aria": "Mode de recherche"
+  },
+  "results": {
+    "one": "1 coach",
+    "many": "{count} coachs",
+    "oneMode": "1 résultat en {mode}",
+    "manyMode": "{count} résultats en {mode}",
+    "emptyTitle": "Aucun coach ne correspond à vos filtres",
+    "emptyBody": "Essayez d'élargir votre recherche à d'autres cantons ou spécialisations.",
+    "emptyModeBody": "Aucun résultat en {mode} ne correspond à vos filtres — élargissez votre recherche à d'autres cantons ou spécialisations.",
+    "loading": "Chargement des coachs…",
+    "errorTitle": "L'annuaire est momentanément indisponible",
+    "errorBody": "Merci de réessayer dans un instant.",
+    "prev": "Précédent",
+    "next": "Suivant"
+  },
+  "card": {
+    "featured": "En vedette",
+    "accepting": "Accepte de nouveaux clients",
+    "waitlist": "Liste d'attente uniquement",
+    "credentialSince": "Certifié(e) depuis {year}",
+    "viewProfile": "Voir le profil"
+  },
+  "formats": {
+    "in-person": "En présentiel",
+    "online": "En ligne"
+  },
+  "languages": {
+    "de": "Allemand",
+    "fr": "Français",
+    "it": "Italien",
+    "en": "Anglais"
+  },
+  "specializations": {
+    "leadership": "Leadership",
+    "career": "Carrière",
+    "team": "Coaching d'équipe",
+    "executive": "Executive",
+    "transition": "Transition",
+    "wellbeing": "Bien-être",
+    "systemic": "Systémique",
+    "diversity": "Diversité & inclusion"
+  },
+  "note": {
+    "title": "Profils issus d'ICF Global",
+    "body": "Les données des coachs sont gérées par ICF Global. Les membres peuvent enrichir leur profil avec du contenu supplémentaire sur ce portail."
+  },
+  "detail": {
+    "back": "Retour à la recherche",
+    "about": "À propos",
+    "specialisations": "Spécialisation",
+    "formats": "Format",
+    "languages": "Langues",
+    "regions": "Zones d'intervention",
+    "links": "Liens",
+    "notFoundTitle": "Ce profil de coach n'est pas disponible",
+    "notFoundBody": "Le profil a peut-être été dépublié. Parcourez l'annuaire pour trouver un autre coach certifié.",
+    "metaFallback": "{name} est un coach certifié ICF référencé dans l'annuaire de The Switzerland Chapter of ICF.",
+    "approach": "Ma façon de travailler",
+    "clientTypes": "Avec qui je travaille",
+    "qualifications": "Accréditations et formation",
+    "fees": "Honoraires",
+    "session": "Durée des séances",
+    "experience": "Expérience",
+    "availability": "Disponibilité",
+    "book": "Réserver une séance",
+    "message": "Envoyer un message",
+    "workWith": "Travailler avec {name}",
+    "languageFallback": "Affiché en {language} — ce coach n'a pas encore publié de version dans votre langue."
+  }
+}

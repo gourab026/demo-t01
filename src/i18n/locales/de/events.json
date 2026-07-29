@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Events — The Switzerland Chapter of ICF",
+    "description": "Konferenzen, Webinare und Community-Treffen für Coaches und Organisationen in der ganzen Schweiz."
+  },
+  "hero": {
+    "eyebrow": "Events",
+    "titlePrefix": "Vernetzen, lernen und ",
+    "titleAccent": "wachsen",
+    "titleSuffix": " – gemeinsam.",
+    "lede": "Konferenzen, Webinare und Community-Treffen für Coaches und Organisationen in der ganzen Schweiz."
+  },
+  "featured": {
+    "eyebrow": "Highlight-Event"
+  },
+  "upcoming": {
+    "eyebrow": "Anstehend",
+    "title": "Was als Nächstes ansteht.",
+    "empty": "Zurzeit sind keine Anlässe geplant. Schauen Sie bald wieder vorbei."
+  },
+  "past": {
+    "eyebrow": "Vergangene Events",
+    "recap": "Rückblick →"
+  },
+  "cta": {
+    "eyebrow": "Mitwirken",
+    "title": "Möchten Sie einen Event vorschlagen?",
+    "propose": "Event vorschlagen"
+  },
+  "tag": {
+    "inPerson": "Vor Ort",
+    "online": "Online",
+    "hybrid": "Hybrid",
+    "registration": "Anmeldung",
+    "full": "Ausgebucht"
+  },
+  "detail": {
+    "backToEvents": "Alle Anlässe",
+    "rsvpEyebrow": "Anmeldung",
+    "rsvp": "Anmelden",
+    "saving": "Wird gespeichert…",
+    "fieldName": "Vollständiger Name",
+    "fieldEmail": "E-Mail",
+    "fieldNotes": "Gibt es etwas, das wir wissen sollten? (optional)",
+    "confirmed": "Sie sind angemeldet. Ihr Platz ist notiert.",
+    "youAreIn": "Sie sind für diesen Anlass angemeldet.",
+    "cancel": "Anmeldung stornieren",
+    "full": "Dieser Anlass ist ausgebucht.",
+    "closed": "Die Anmeldung für diesen Anlass ist nicht offen.",
+    "noRegistration": "Keine Anmeldung nötig — kommen Sie einfach vorbei.",
+    "pastEvent": "Dieser Anlass hat bereits stattgefunden.",
+    "membersOnly": "Die Anmeldung für diesen Anlass steht angemeldeten Mitgliedern offen.",
+    "signIn": "Anmelden",
+    "seatsLeft": "Noch {n} Plätze",
+    "joinLink": "An der Online-Session teilnehmen",
+    "privacy": "Wir verwenden Ihre Angaben ausschliesslich für die Organisation dieses Anlasses.",
+    "error": {
+      "full": "Dieser Anlass ist soeben ausgebucht worden.",
+      "closed": "Die Anmeldung ist geschlossen.",
+      "duplicate": "Diese E-Mail-Adresse ist bereits angemeldet.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "notFoundTitle": "Anlass nicht gefunden",
+    "notFoundBody": "Dieser Anlass wurde möglicherweise zurückgezogen oder der Link ist falsch.",
+    "errorTitle": "Der Anlass konnte nicht geladen werden",
+    "errorBody": "Bitte versuchen Sie es in einem Moment erneut."
+  }
+}
