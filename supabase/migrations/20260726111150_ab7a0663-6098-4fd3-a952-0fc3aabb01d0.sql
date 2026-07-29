@@ -15,7 +15,7 @@ GRANT ALL ON public.profiles TO service_role;
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "profiles public read" ON public.profiles
-  FOR SELECT TO anon, authenticated USING (true);
+  FOR SELECT TO authenticated USING (auth.uid() = id);
 CREATE POLICY "profiles insert own" ON public.profiles
   FOR INSERT TO authenticated WITH CHECK (auth.uid() = id);
 CREATE POLICY "profiles update own" ON public.profiles

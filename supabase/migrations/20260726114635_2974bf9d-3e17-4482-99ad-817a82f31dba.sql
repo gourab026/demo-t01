@@ -73,7 +73,7 @@ create policy "profiles public read published authors" on public.profiles
   using (exists (select 1 from public.articles a where a.author_id = profiles.id and a.status = 'published'));
 
 create policy "profiles authenticated read" on public.profiles
-  for select to authenticated using (true);
+  for select to authenticated using (auth.uid() = id);
 
 -- 3. Categories: editors only for writes
 drop policy if exists "categories editors write" on public.categories;
